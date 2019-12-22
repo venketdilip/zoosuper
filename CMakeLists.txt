@@ -1,0 +1,5 @@
+project(directory_test)
+include_directories(include)
+file(GLOB SOURCES "src/*.cpp")
+add_executable(api ${SOURCES})
+target_link_libraries(api "-lws2_32")
