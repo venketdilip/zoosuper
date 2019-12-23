@@ -9,7 +9,7 @@ build using Ninja
 />ninja
 />api
 
-Initialising Winsock.Initialised.
+
 Server Starts at http://localhost:8888
 You can  access  super hero data /app1?id=[Id value]
  Example:http://localhost:8888/app1?id=69
