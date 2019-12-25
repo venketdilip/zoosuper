@@ -1,0 +1,6 @@
+project(directory_test)
+include_directories(include)
+link_directories(lib)
+file(GLOB SOURCES "src/*.cpp")
+add_executable(dump ${SOURCES})
+target_link_libraries(dump "-lcurl -lws2_32")

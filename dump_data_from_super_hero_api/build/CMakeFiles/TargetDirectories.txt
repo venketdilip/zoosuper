@@ -1,0 +1,3 @@
+D:/curl/build/CMakeFiles/dump.dir
+D:/curl/build/CMakeFiles/edit_cache.dir
+D:/curl/build/CMakeFiles/rebuild_cache.dir
