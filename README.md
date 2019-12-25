@@ -17,9 +17,9 @@ Strat Apache Tomcat
 Deploy SuperHero.war WAR File to Apache Tomcat 
 <pre>
 <h1>Located in</h1>
-	<h2>webapp</h2>
+	webapp
 	  |
-	  |---<h3>SuperHero.war</h3>
+	  |---SuperHero.war
 	   
 </pre>
 <pre> 
