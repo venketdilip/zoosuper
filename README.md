@@ -37,7 +37,7 @@ The data is accessible through a REST API.
  
 
 
-Server Starts at http://localhost:8888
+Server Starts at <strong>http://localhost:8888</strong>
 You can  access  super hero data /app1?id=[Id value]
  
 Strat Apache Tomcat 
@@ -52,8 +52,8 @@ Located in
  
  
  Example:
-http://localhost:8888/app1?id=69
-
+<strong>http://localhost:8888/app1?id=69</strong>
+<js>
 {
 	result: [
 		{
@@ -109,9 +109,9 @@ http://localhost:8888/app1?id=69
 	],
 	status: ["sucess"]
 }
+ </js>
  
- 
- http://localhost:8888/app1?id=834
+ <strong>http://localhost:8888/app1?id=834</strong>
  {
 	result: [ ],
 	status: [
