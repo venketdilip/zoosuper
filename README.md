@@ -27,7 +27,7 @@ Deploy SuperHero.war WAR File to Apache Tomcat
 <h1>How can I use it?</h1>
 The data is accessible through a REST API.
 +---------------------------+--------+------------------------------------------------------------------+
-|Reference                  | Method |                         Purpose                                  |
+|        Reference          | Method |                         Purpose                                  |
 +---------------------------+--------+------------------------------------------------------------------+ 
 |   app1?id=character_id    | GET    | Search by character id. Returns all information of the character.|
 +---------------------------+--------+------------------------------------------------------------------+
