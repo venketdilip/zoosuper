@@ -8,7 +8,7 @@ exicute dump.exe with Command Line Argument
 
 </pre>
 
-</pre>
+<pre>
 
 D:\git\dump_data_from_super_hero_api\build>dump 69
 *   Trying 2606:4700:30::681b:9490:80...
@@ -67,4 +67,4 @@ Bruce Wayne (biological father), Warren McGinnis (father, deceased), Mary McGinn
 https:\/\/www.superherodb.com\/pictures2\/portraits\/10\/100\/10441.jpg
 
 D:\git\dump_data_from_super_hero_api\build>
-<pre>
+</pre>
