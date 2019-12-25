@@ -51,9 +51,10 @@ Located in
 	   
  
  
- Example:
-<strong>http://localhost:8888/app1?id=69</strong>
+ 
 </pre>
+Example:
+<strong>http://localhost:8888/app1?id=69</strong>
 ```json
 {
 	result: [
