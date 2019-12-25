@@ -8,6 +8,20 @@ build using Ninja
 />cmake -GNinja ..
 />ninja
 />api
+
+Server Starts at http://localhost:8888
+You can  access  super hero data /app1?id=[Id value]
+ 
+Strat Apache Tomcat 
+ 
+Deploy SuperHero.war WAR File to Apache Tomcat 
+<pre>
+<h1>Located in</h1>
+	<h2>webapp</h2>
+	  |
+	  |---<h3>SuperHero.war</h3>
+	   
+</pre>
 <pre> 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 How can I use it?
