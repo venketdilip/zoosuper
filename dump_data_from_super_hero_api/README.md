@@ -1,6 +1,6 @@
 you can dump data from superhero api
 
-exicute dump.exe with Command Line Argument 
+Executing dump.exe with Command Line Argument 
 
 <pre>
 />cd build
