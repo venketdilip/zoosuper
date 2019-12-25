@@ -148,6 +148,10 @@ http://localhost:8888/app1?name=1
 					url: "https://www.superherodb.com/pictures2/portraits/10/100/1460.jpg",
 					gender: "Male"
 				},
-			]
+				.
+				.
+				.
+				.
+				etc....
 ```
 
