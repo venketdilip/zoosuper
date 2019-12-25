@@ -53,7 +53,7 @@ Located in
  
  Example:
 <strong>http://localhost:8888/app1?id=69</strong>
-<js>
+```json
 {
 	result: [
 		{
@@ -109,7 +109,7 @@ Located in
 	],
 	status: ["sucess"]
 }
- </js>
+```
  
  <strong>http://localhost:8888/app1?id=834</strong>
  {
