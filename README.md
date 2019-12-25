@@ -129,27 +129,25 @@ http://localhost:8888/app1?wrong=81
 http://localhost:8888/app1?name=1
  ```json
 {
-result: [
-{
-id: "1",
-name: "A-Bomb",
-url: "https://www.superherodb.com/pictures2/portraits/10/100/10060.jpg",
-gender: "Male"
-},
-{
-id: "2",
-name: "Abe Sapien",
-url: "https://www.superherodb.com/pictures2/portraits/10/100/956.jpg",
-gender: "Male"
-},
-{
-id: "3",
-name: "Abin Sur",
-url: "https://www.superherodb.com/pictures2/portraits/10/100/1460.jpg",
-gender: "Male"
-},
-.
-.
-.
+	result: [
+				{
+					id: "1",
+					name: "A-Bomb",
+					url: "https://www.superherodb.com/pictures2/portraits/10/100/10060.jpg",
+					gender: "Male"
+				},
+				{
+					id: "2",
+					name: "Abe Sapien",
+					url: "https://www.superherodb.com/pictures2/portraits/10/100/956.jpg",
+					gender: "Male"
+				},
+				{
+					id: "3",
+					name: "Abin Sur",
+					url: "https://www.superherodb.com/pictures2/portraits/10/100/1460.jpg",
+					gender: "Male"
+				},
+			]
 ```
 
