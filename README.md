@@ -8,8 +8,10 @@ build using Ninja
 />cmake -GNinja ..
 />ninja
 />api
-![Test Image 1](index.png)
+
 </pre>
+
+![Test Image 1](index.png)
 Server Starts at http://localhost:8888
 You can  access  super hero data /app1?id=[Id value]
  
