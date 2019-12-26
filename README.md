@@ -15,13 +15,12 @@ Server Starts at http://localhost:8888
 You can  access  super hero data /app1?id=[Id value]
  
 Strat Apache Tomcat 
- 
-Deploy SuperHero.war WAR File to Apache Tomcat 
+Copy all  Files from webapp/SuperHero to Apache Tomcat webapps folder 
 <pre>
 <h1>Located in</h1>
 	webapp
-	  |
-	  |---SuperHero.war
+	  |------SuperHero/
+	  
 	   
 </pre>
 <pre> 
