@@ -61,71 +61,63 @@ Located in
 Example:
 <strong>http://localhost:8888/app1?id=69</strong>
 ```json
-{
-	result: [
-		{
-		id: " 69",
-		name: " Batman",
-			powerstats: {
-			intelligence: " 81",
-			strength: " 40",
-			speed: " 29",
-			durability: " 55",
-			power: " 63",
-			combat: " 90"
-			},
-			biography: {
-			full-name: " Terry McGinnis",
-			alter-egos: " No alter egos found.",
-			aliases: [
-			"Batman II",
-			"The Tomorrow Knight",
-			"The second Dark Knight",
-			"The Dark Knight of Tomorrow",
-			"Batman Beyond"
-			],
-			place-of-birth: " Gotham City, 25th Century",
-			first-appearance: " Batman Beyond #1",
-			publisher: " DC Comics",
-			alignment: " good"
-			},
-			appearance: {
-			gender: " Male",
-			race: " Human",
-			height: [
-			"5'10",
-			"178 cm"
-			],
-			weight: [
-			"170 lb",
-			"77 kg"
-			],
-			eye-color: " Blue",
-			hair-color: " Black"
-			},
-			work: {
-			occupation: " NO",
-			base: " 21st Century Gotham City"
-			},
-			connections: {
-			group-affiliation: " Batman Family, Justice League Unlimited",
-			relatives: " Bruce Wayne (biological father), Warren McGinnis (father, deceased), Mary McGinnis (mother), Matt McGinnis (brother)",
-			url: " https://www.superherodb.com/pictures2/portraits/10/100/10441.jpg"
-			}
-		}
-	],
-	status: ["sucess"]
-}
-```
 
- 
- <strong>http://localhost:8888/app1?id=834</strong>
- ```json
- {
-	result: [ ],
-	status: [
-	"data not found"
-	]
+{
+  "result": [
+    {
+      "id": " 69",
+      "name": " Batman",
+      "powerstats": {
+        "intelligence": " 81",
+        "strength": " 40",
+        "speed": " 29",
+        "durability": " 55",
+        "power": " 63",
+        "combat": " 90"
+      },
+      "biography": {
+        "full-name": " Terry McGinnis",
+        "alter-egos": " No alter egos found.",
+        "aliases": [
+          "Batman II",
+          "The Tomorrow Knight",
+          "The second Dark Knight",
+          "The Dark Knight of Tomorrow",
+          "Batman Beyond"
+        ],
+        "place-of-birth": " Gotham City, 25th Century",
+        "first-appearance": " Batman Beyond #1",
+        "publisher": " DC Comics",
+        "alignment": " good"
+      },
+      "appearance": {
+        "gender": " Male",
+        "race": " Human",
+        "height": [
+          "5'10",
+          "178 cm"
+        ],
+        "weight": [
+          "170 lb",
+          "77 kg"
+        ],
+        "eye-color": " Blue",
+        "hair-color": " Black"
+      },
+      "work": {
+        "occupation": " NO",
+        "base": " 21st Century Gotham City"
+      },
+      "connections": {
+        "group-affiliation": " Batman Family, Justice League Unlimited",
+        "relatives": " Bruce Wayne (biological father), Warren McGinnis (father, deceased), Mary McGinnis (mother), Matt McGinnis (brother)",
+        "url": " https://www.superherodb.com/pictures2/portraits/10/100/10441.jpg"
+      }
+    }
+  ],
+  "status": [
+    "sucess"
+  ]
 }
 ```
 http://localhost:8888/app1?wrong=81
@@ -136,27 +128,23 @@ http://localhost:8888/app1?name=1
 {
 	result: [
 				{
-					id: "1",
-					name: "A-Bomb",
-					url: "https://www.superherodb.com/pictures2/portraits/10/100/10060.jpg",
-					gender: "Male"
+					"id": "1",
+					"name": "A-Bomb",
+					"url": "https://www.superherodb.com/pictures2/portraits/10/100/10060.jpg",
+					"gender": "Male"
 				},
 				{
-					id: "2",
-					name: "Abe Sapien",
-					url: "https://www.superherodb.com/pictures2/portraits/10/100/956.jpg",
-					gender: "Male"
+					"id": "2",
+					"name": "Abe Sapien",
+					"url": "https://www.superherodb.com/pictures2/portraits/10/100/956.jpg",
+					"gender": "Male"
 				},
 				{
-					id: "3",
-					name: "Abin Sur",
-					url: "https://www.superherodb.com/pictures2/portraits/10/100/1460.jpg",
-					gender: "Male"
-				},
-				.
-				.
-				.
-				.
-				etc....
+					"id": "3",
+					"name": "Abin Sur",
+					"url": "https://www.superherodb.com/pictures2/portraits/10/100/1460.jpg",
+					"gender": "Male"
+				}
+				]}
 ```
 
