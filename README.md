@@ -45,14 +45,7 @@ The data is accessible through a REST API.
 Server Starts at <strong>http://localhost:8888</strong>
 You can  access  super hero data /app1?id=[Id value]
  
-Strat Apache Tomcat 
- 
-Deploy SuperHero.war WAR File to Apache Tomcat 
 
-Located in
-	webapp
-	  |
-	  |---SuperHero.war
 	   
  
  
