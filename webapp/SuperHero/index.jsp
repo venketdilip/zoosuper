@@ -27,8 +27,22 @@
 
     <link href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weather-icons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
    <style>
+   #result {
+   position: absolute;
+   width: 100%;
+   max-width:870px;
+   cursor: pointer;
+   overflow-y: auto;
+   max-height: 400px;
+   box-sizing: border-box;
+   z-index: 1001;
+  }
+
     #weatherWidget .currentDesc {
         color: #ffffff!important;
     }
@@ -104,7 +118,13 @@ try{
 		JSONObject jo = (JSONObject) parser.parse(s);
 
 
-  
+  File f = new File("webapps\\SuperHero\\data.json");  
+f.delete()  ;
+ f = new File("webapps\\SuperHero\\data.json"); 
+FileWriter filewriter = new FileWriter(f, true);
+filewriter.write(s); // Pass json object.
+filewriter.flush();
+filewriter.close();
   
         Iterator<Map.Entry> itr1 ;
         JSONArray ja = (JSONArray) jo.get("result"); 
@@ -155,6 +175,18 @@ try{
 
     <div id="right-panel" class="right-panel">
        
+	   
+	     <div style="width:900px;">
+   <h3 align="center">Search Data By name</h3>   
+   <br /><br />
+   <div align="center">
+    <input type="text" name="search" id="search" placeholder="Search SuperHero Name" class="form-control" />
+   </div>
+   <ul class="list-group" id="result"></ul>
+   <br />
+  </div>
+	   
+	   
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
                         <div class="card">
@@ -384,6 +416,30 @@ catch(Exception e){}
     <script src="assets/js/init/fullcalendar-init.js"></script>
 
     <!--Local Stuff-->
-    
+    <script>
+$(document).ready(function(){
+ $.ajaxSetup({ cache: false });
+ $('#search').keyup(function(){
+  $('#result').html('');
+  $('#state').val('');
+  var searchField = $('#search').val();
+  var expression = new RegExp(searchField, "i");
+  $.getJSON('data.json', function(data) {
+   $.each(data.result, function(key, value){
+    if (value.name.search(expression) != -1 || value.id.search(expression) != -1)
+    {
+     $('#result').append('<li class="list-group-item link-class"><img src="'+value.url+'" height="40" width="40" class="img-thumbnail" /> '+value.name+' | <span class="text-muted">'+value.gender+'</span><a href="profile.jsp?id='+value.id+'&url='+value.url+'"><span class="badge badge-complete">view</span></a>  </li>');
+    }
+   });   
+  });
+ });
+ 
+ $('#result').on('click', 'li', function() {
+  var click_text = $(this).text().split('|');
+  $('#search').val($.trim(click_text[0]));
+  $("#result").html('');
+ });
+});
+</script>
 
 </html>
