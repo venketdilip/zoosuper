@@ -126,7 +126,7 @@ http://localhost:8888/app1?wrong=81
 http://localhost:8888/app1?name=1
  ```json
 {
-	result: [
+	"result": [
 				{
 					"id": "1",
 					"name": "A-Bomb",
